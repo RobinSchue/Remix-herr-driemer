@@ -6,7 +6,12 @@ import {
   Scripts,
   ScrollRestoration,
 } from "remix";
-import type { MetaFunction } from "remix";
+import type { MetaFunction, LinksFunction } from "remix";
+import tailwindUrl from "./styles/tailwind.css";
+
+export let links: LinksFunction = () => {
+  return [{ rel: "stylesheet", href: tailwindUrl }];
+};
 
 export const meta: MetaFunction = () => {
   return { title: "Herr Driemer" };

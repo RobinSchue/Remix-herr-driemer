@@ -4,7 +4,7 @@ export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
       <h1>Moin, Ich bin Luke!</h1>
-      <p>
+      <p className="font-mono text-2xl">
         Weil ich zu busy bin, befindet sich diese Website aktuell noch im
         Aufbau! Sry ...
       </p>
