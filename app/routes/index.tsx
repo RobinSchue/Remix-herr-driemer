@@ -1,4 +1,9 @@
 import { Link } from "remix";
+import { Button, links as buttonLinks } from "~/components/button";
+
+export function links() {
+  return [...buttonLinks()];
+}
 
 export default function Index() {
   return (
@@ -11,6 +16,7 @@ export default function Index() {
         Weil ich zu busy bin, befindet sich diese Website aktuell noch im
         Aufbau! Sry ...
       </p>
+      <Button className="mb-16 italic" />
       <a
         target="_blank"
         href="https://www.instagram.com/driem.works"
